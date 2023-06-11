@@ -177,51 +177,75 @@ aside h2{
 }
 
 
-.sobremi1{
-    display: flex;
-    margin-bottom: 3rem; 
-    margin-top: 3rem; 
-    text-align: justify;
-    line-height: 2rem;
-  
-}
-.sobremi1 h3{
-    margin-left: 2rem;
-    text-align: justify;
-    line-height: 3rem;
+.containersobremi{
+    min-height: 100vh;
+    min-width: 100%;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr, 2fr;
+    grid-template-rows: 1fr 4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "sobremi1 sobremi2"
+    "sobremi3 sobremi4";
+}
+
+.sobremi1{
+    grid-area: sobremi1;
+}
+.sobremi2{
+    grid-area: sobremi2;
+}
+.sobremi3{
+    grid-area: sobremi3;
+}
+.sobremi4{
+    grid-area: sobremi4;
+}
+.sobremi1{
+    padding: 4rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+} 
+
+.sobremi1 h2{
+    line-height: 1rem;
+    font-size: 2rem;
     color: #6f6f6e;
     font-weight: bold;
-    font-size: 2rem;
     background-color: #F2EBDD;
-}
-.sobremi1 p{
-    text-align: justify;
-    font-size: 20px;
-    line-height: 2rem;
-    margin-left: 8rem;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    color: #6f6f6e;
+
+
 }
 
 .sobremi2{
-    display: flex;
-    margin-bottom: 1rem;
-}
-.sobremi2 h3{
-    background-color: #F2EBDD;
-    color: #6f6f6e;
+    padding: 2rem;
     text-align: justify;
-    font-weight: bold;
-    font-size: 2rem;
-    margin-left: 0;
+    line-height: 2rem;
+    color: #6f6f6e;
+    font-size: 1rem;
+    background-color: #F2EBDD;
 }
+
+.sobremi3{
+    display: block;
+    margin: 2rem;
+}
+
+.sobremi4{
+        text-align: justify;
+        line-height: 2rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: #6f6f6e;
+    
+}
+
+
 
 .hablemos{
     display: flex;
@@ -425,4 +449,87 @@ margin-left: 25px;
         height: auto; 
     }
 
+    .containersobremi{
+        min-height: 100vh;
+        max-width: 100%;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.3fr 1fr 1fr;
+        gap: 15px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "sobremi1"
+          "sobremi2" 
+          "sobremi3"
+          "sobremi4"   
+        }
+        .sobremi1{
+            width: 100%;
+        }
+        .sobremi1 h2{
+            line-height: 3rem;
+        }
+        .sobremi2{
+            width: 100%;
+
+        }
+        .sobremi3{
+            width: 100%;
+            margin: 0%;
+            padding: 0%;
+        }
+        .fotosobremi{
+            width: 100%;
+            padding: 25px;
+
+        }
+        .sobremi4{
+            width: 100%;
+        }
+        .sobremi4 h2{
+            text-align: center;
+        }
+        .hablemos{
+            display: flex;
+            flex-direction: column;
+        }
+        .contacto1 h3{
+            font-size: 1.5rem;
+            margin-bottom: 35px;
+        }
+        .contacto2 h1{
+            font-size: 1.5rem;
+        }
+        .areamensaje{
+            max-width:100%;
+        }
+
+        .containergaleria{
+            max-width: 100vw;
+            margin: 0;
+        }
+        .galeria{
+            display: flex;
+            flex-direction: column;
+
+
+        }
+        .galeria div{
+
+            margin: 0;
+            
+        }
+        .galeria2 img{
+            width: 400px;
+        }
+
+
+
+
+
+
+        footer{
+            max-width: 100%;
+        };
 }
