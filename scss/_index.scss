@@ -1,0 +1,97 @@
+body{
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: $clarito;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container-fluid{
+    background-color: $clarito;
+    font-size: 18px;
+    .nav-item:hover{
+        background-color: $verde;
+        border-radius: $bordesredondos;
+        .dropdown-menu{
+            background-color: $clarito;
+            border-radius: $bordesredondos;
+            .dropdown-item{
+                border-radius: 10px;
+                &:hover{
+                    background-color: $verde;
+                }
+
+            }
+        }
+    }
+
+}
+.titulo{
+    height: 12rem;
+    background-color: $rosa;
+    color: $clarito;
+    padding: 50px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.containerinicio{
+    min-height: 100vh;
+    min-width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1,5fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "fotoinicio fotoinicio fotoinicio"
+      "texto1 texto2 texto3";
+      .fotoinicio{
+        grid-area: fotoinicio;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        width:100%
+      }
+      .texto1{
+        grid-area: texto1;
+        margin: 2rem;
+        width: fit-content;
+        .parrafo1{
+            color:$gris;
+            font-size: 30px;
+            font-weight: bolder;
+            text-align:left;
+            line-height: 2rem;
+            padding: 0,5rem;
+            margin: 1rem;
+        }
+      }
+      .texto2{
+        grid-area: texto2;
+        margin: 1rem;
+        width: fit-content;
+        .parrafo2{
+            color: $gris;
+            text-align: justify;
+            line-height: 2rem;
+            padding: 0,5rem;
+            margin: 1rem;
+        }
+      }
+      .texto3{
+        grid-area: texto3;
+        margin: 1rem;
+        width: fit-content;
+        .parrafo3{
+            color: $gris;
+            text-align: justify;
+            line-height: 2rem;
+            padding: 0,5rem;
+            margin: 1rem;
+        }
+      }
+
+}

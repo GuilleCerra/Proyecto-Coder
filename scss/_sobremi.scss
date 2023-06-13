@@ -1,0 +1,63 @@
+.titulosobremi{
+    height: 12rem;
+    background-color: $rosa;
+    color: $clarito;
+    padding: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.containersobremi{
+    min-height: 100vh;
+    min-width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr, 2fr;
+    grid-template-rows: 1fr 4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "sobremi1 sobremi2"
+    "sobremi3 sobremi4";
+    .sobremi1{
+        grid-area: sobremi1;
+        padding: 4rem;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        h2{
+            line-height: 1rem;
+            font-size: 2rem;
+            color: $gris;
+            font-weight: bold;
+            background-color: $clarito;
+        }
+    }
+    .sobremi2{
+        grid-area: sobremi2;
+        padding: 2rem;
+        text-align: justify;
+        line-height: 2rem;
+        color: $gris;
+        font-size: 1rem;
+        background-color: $clarito;
+    }
+    .sobremi3{
+        grid-area: sobremi3;
+        display: block;
+        margin: 2rem;
+    }
+    .sobremi4{
+        grid-area: sobremi4;
+        text-align: justify;
+        line-height: 2rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: $gris;
+    }
+    
+}

@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  min-width: 100%;
+  background-color: #F2EBDD;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif; }
+
+.container-fluid {
+  background-color: #F2EBDD;
+  font-size: 18px; }
+  .container-fluid .nav-item:hover {
+    background-color: #c6dfa3;
+    border-radius: 15px; }
+    .container-fluid .nav-item:hover .dropdown-menu {
+      background-color: #F2EBDD;
+      border-radius: 15px; }
+      .container-fluid .nav-item:hover .dropdown-menu .dropdown-item {
+        border-radius: 10px; }
+        .container-fluid .nav-item:hover .dropdown-menu .dropdown-item:hover {
+          background-color: #c6dfa3; }
+
+.titulo {
+  height: 12rem;
+  background-color: #ff9b9e;
+  color: #F2EBDD;
+  padding: 50px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 1rem; }
+
+.containerinicio {
+  min-height: 100vh;
+  min-width: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1,5fr 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "fotoinicio fotoinicio fotoinicio"
+ "texto1 texto2 texto3"; }
+  .containerinicio .fotoinicio {
+    grid-area: fotoinicio;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 100%; }
+  .containerinicio .texto1 {
+    grid-area: texto1;
+    margin: 2rem;
+    width: fit-content; }
+    .containerinicio .texto1 .parrafo1 {
+      color: #6f6f6e;
+      font-size: 30px;
+      font-weight: bolder;
+      text-align: left;
+      line-height: 2rem;
+      padding: 0,5rem;
+      margin: 1rem; }
+  .containerinicio .texto2 {
+    grid-area: texto2;
+    margin: 1rem;
+    width: fit-content; }
+    .containerinicio .texto2 .parrafo2 {
+      color: #6f6f6e;
+      text-align: justify;
+      line-height: 2rem;
+      padding: 0,5rem;
+      margin: 1rem; }
+  .containerinicio .texto3 {
+    grid-area: texto3;
+    margin: 1rem;
+    width: fit-content; }
+    .containerinicio .texto3 .parrafo3 {
+      color: #6f6f6e;
+      text-align: justify;
+      line-height: 2rem;
+      padding: 0,5rem;
+      margin: 1rem; }
+
+.titulosobremi {
+  height: 12rem;
+  background-color: #ff9b9e;
+  color: #F2EBDD;
+  padding: 50px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 1rem; }
+
+.containersobremi {
+  min-height: 100vh;
+  min-width: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr, 2fr;
+  grid-template-rows: 1fr 4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "sobremi1 sobremi2"
+ "sobremi3 sobremi4"; }
+  .containersobremi .sobremi1 {
+    grid-area: sobremi1;
+    padding: 4rem;
+    display: flex;
+    text-align: center;
+    align-items: center; }
+    .containersobremi .sobremi1 h2 {
+      line-height: 1rem;
+      font-size: 2rem;
+      color: #6f6f6e;
+      font-weight: bold;
+      background-color: #F2EBDD; }
+  .containersobremi .sobremi2 {
+    grid-area: sobremi2;
+    padding: 2rem;
+    text-align: justify;
+    line-height: 2rem;
+    color: #6f6f6e;
+    font-size: 1rem;
+    background-color: #F2EBDD; }
+  .containersobremi .sobremi3 {
+    grid-area: sobremi3;
+    display: block;
+    margin: 2rem; }
+  .containersobremi .sobremi4 {
+    grid-area: sobremi4;
+    text-align: justify;
+    line-height: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #6f6f6e; }
+
+.titulotraduccion, .titulocontacto, .titulogaleria {
+  height: 12rem;
+  background-color: #ff9b9e;
+  color: #F2EBDD;
+  padding: 50px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 1rem; }
+
+.containertrad {
+  min-height: 100vh;
+  min-width: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+  grid-auto-flow: row;
+  grid-template-areas: "tradpublica textopublica" 
+ "tradjuridica textojuridica"
+ "correccion textocorreccion"; }
+  .containertrad .tradpublica {
+    grid-area: tradpublica; }
+  .containertrad .tradjuridica {
+    grid-area: tradjuridica; }
+  .containertrad .correccion {
+    grid-area: correccion; }
+  .containertrad .textopublica, .containertrad .textojuridica, .containertrad .textocorreccion {
+    grid-area: textopublica;
+    text-align: justify;
+    line-height: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #6f6f6e; }
+    .containertrad .textopublica h4, .containertrad .textojuridica h4, .containertrad .textocorreccion h4 {
+      font-weight: bold;
+      font-size: 23px;
+      color: #c6dfa3; }
+    .containertrad .textopublica h2, .containertrad .textojuridica h2, .containertrad .textocorreccion h2 {
+      font-weight: bold;
+      font-size: 26px; }
+  .containertrad .textojuridica {
+    grid-area: textojuridica; }
+  .containertrad .textocorreccion {
+    grid-area: textocorreccion; }
+
+.hablemos {
+  display: flex;
+  flex-direction: row; }
+  .hablemos .contacto1, .hablemos .contacto2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 1rem;
+    text-align: justify;
+    line-height: 2rem;
+    padding: 1rem;
+    color: #6f6f6e; }
+    .hablemos .contacto1 h3, .hablemos .contacto2 h3 {
+      padding: 2rem;
+      font-size: 2rem;
+      background-color: #F2EBDD;
+      color: #6f6f6e; }
+    .hablemos .contacto1 p, .hablemos .contacto2 p {
+      text-align: left;
+      padding: 20px;
+      margin: 1rem;
+      display: flex;
+      justify-content: baseline; }
+  .hablemos .contacto2 {
+    justify-content: end; }
+    .hablemos .contacto2 h3 {
+      padding: 15px;
+      font-size: 1.5rem;
+      background-color: #F2EBDD;
+      color: #6f6f6e; }
+    .hablemos .contacto2 .formulario1 {
+      margin: 25px;
+      background-color: #B99FCF;
+      color: #6f6f6e;
+      padding: 20px;
+      border-style: dotted;
+      border-color: black; }
+      .hablemos .contacto2 .formulario1 .rellenocuadro {
+        background-color: #c6dfa3; }
+      .hablemos .contacto2 .formulario1 .areamensaje {
+        background-color: #c6dfa3;
+        width: 500px;
+        height: 120px; }
+
+.galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
+  .galeria img {
+    margin: 0.5rem;
+    padding: 0;
+    border-style: groove;
+    border-color: #6f6f6e;
+    border-width: 0.5rem;
+    opacity: .4; }
+    .galeria img:hover {
+      opacity: 1;
+      border-color: #B99FCF;
+      border-width: 0.5rem; }
+
+footer {
+  width: 100%;
+  margin-bottom: 25px;
+  background-color: #c6dfa3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  footer .logo, footer .facebook, footer .whatsapp, footer .instagram, footer .linkedin {
+    padding: 5px;
+    margin-right: 25px;
+    margin-left: 25px; }
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100vw; }
+  .titulo {
+    height: 6rem;
+    font-size: 2rem;
+    align-content: baseline;
+    padding: 1rem; }
+  .containerinicio {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-areas: "fotoinicio fotoinicio fotoinicio"
+ "texto1 texto1 texto1"
+ "texto2 texto2 texto2"
+ "texto3 texto3 texto3"; }
+    .containerinicio .fotoinicio {
+      margin-bottom: 0;
+      width: 100%;
+      height: auto; }
+    .containerinicio .parrafo1 {
+      text-align: justify;
+      font-size: 20px; }
+  .titulotraduccion, .titulocontacto, .titulogaleria {
+    height: 6rem;
+    font-size: 20px;
+    padding: 1rem; }
+  .containertrad {
+    min-height: 100vh;
+    min-width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    grid-auto-flow: row;
+    grid-template-areas: "tradpublica"
+ "textopublica" 
+ "tradjuridica"
+ "textojuridica"
+ "correccion" 
+ "textocorreccion"; }
+    .containertrad .fotopublica, .containertrad .fotojuridica, .containertrad .fotocorreccion {
+      width: 100%;
+      height: auto; }
+    .containertrad .textopublica, .containertrad .textojuridica, .containertrad .textocorreccion {
+      width: 100%;
+      font-size: 1rem; }
+      .containertrad .textopublica h4, .containertrad .textojuridica h4, .containertrad .textocorreccion h4 {
+        font-size: 22px; }
+      .containertrad .textopublica h2, .containertrad .textojuridica h2, .containertrad .textocorreccion h2 {
+        font-size: 20px; }
+  .containersobremi {
+    margin: 0;
+    min-height: 100vh;
+    max-width: 100vw;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.3fr 1fr 1fr;
+    gap: 15px;
+    grid-auto-flow: row;
+    grid-template-areas: "sobremi1"
+ "sobremi2" 
+ "sobremi3"
+ "sobremi4"; }
+    .containersobremi .sobremi1 {
+      max-width: 100%;
+      padding: 0;
+      margin: 0; }
+      .containersobremi .sobremi1 h2 {
+        line-height: 3rem; }
+    .containersobremi .sobremi2 {
+      max-width: 100%;
+      padding: 0;
+      margin: 0; }
+    .containersobremi .sobremi3 {
+      max-width: 100%;
+      margin: 0;
+      padding: 0; }
+      .containersobremi .sobremi3 .fotosobremi {
+        width: 100%;
+        padding: 25px; }
+    .containersobremi .sobremi4 {
+      max-width: 100%;
+      padding: 0;
+      margin: 0; }
+      .containersobremi .sobremi4 h2 {
+        text-align: center; }
+  .titulocontacto {
+    font-size: 3rem; }
+  .hablemos {
+    display: flex;
+    flex-direction: column; }
+    .hablemos .contacto1 h3, .hablemos .contacto2 h3 {
+      font-size: 1.5rem;
+      margin-bottom: 35px; }
+    .hablemos .contacto2 h3 {
+      font-size: 1.5rem; }
+    .hablemos .contacto2 .areamensaje {
+      max-width: 100%; }
+  .titulogaleria {
+    font-size: 2.5rem; }
+  .galeria {
+    max-width: 100vw;
+    margin: 0%;
+    display: flex;
+    flex-direction: column; }
+    .galeria div {
+      margin: 0%; }
+    .galeria .galeria2 img {
+      width: 400px; }
+  footer {
+    max-width: 100%; } }

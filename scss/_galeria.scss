@@ -1,0 +1,24 @@
+.titulogaleria{
+    @extend .titulotraduccion
+}
+.galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    img{
+        margin: 0.5rem;
+        padding: 0;
+        border-style:groove;
+        border-color: $gris;
+        border-width: 0.5rem;
+        opacity: .4;
+        &:hover{
+            opacity: 1;
+            border-color:$violeta;
+            border-width: 0.5rem;
+        }
+    }
+}
