@@ -9,7 +9,7 @@
     }
     .containerinicio{
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.8fr 1fr 1fr;
         grid-template-areas:
         "fotoinicio fotoinicio fotoinicio"
         "texto1 texto1 texto1"
@@ -159,6 +159,9 @@
         }
     
     footer{
-        max-width: 100%;
+        width: 100%;
+        .logo{
+            margin: 0;
+        }
     }
 }

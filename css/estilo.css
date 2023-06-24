@@ -274,7 +274,7 @@ footer {
     padding: 1rem; }
   .containerinicio {
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.8fr 1fr 1fr;
     grid-template-areas: "fotoinicio fotoinicio fotoinicio"
  "texto1 texto1 texto1"
  "texto2 texto2 texto2"
@@ -376,4 +376,6 @@ footer {
     .galeria .galeria2 img {
       width: 400px; }
   footer {
-    max-width: 100%; } }
+    width: 100%; }
+    footer .logo, footer .facebook, footer .whatsapp, footer .instagram, footer .linkedin {
+      margin: 0; } }
